@@ -17,8 +17,9 @@
             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Properties</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Buy/Rent</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            <li><button class="btnlogin-popup"id="loginBtn">Login</button></li>            
         </ul>
     </nav>
 </header>
@@ -67,7 +68,75 @@
             </div>
         </div>
     </section>
-</main>
 
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form class="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+       </div>      
+        <div class="show-password">  
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword">Show Password</label>
+      </div>
+      <button type="submit" class="btn-login">Login</button>
+      <p class="extra-linl">Don’t have an account? <a href="#">Register</a></p>
+    </form>
+  </div>
+</div>
+<script>
+  const modal = document.getElementById("loginModal");
+  const loginBtn = document.getElementById("loginBtn");
+  const closeBtn = document.querySelector(".close");
+  const loginForm = document.querySelector(".login-form");
+  const passwordInput = document.getElementById("password");
+  const showPasswordCheckbox = document.getElementById("showPassword");
+  
+  showPasswordCheckbox.addEventListener("change", function(){
+  if(this.check){
+   passwordInput.type="text";
+  }
+  else{
+   passwordInput.type="password";
+  }
+});   
+  
+  loginForm.addEventListener("submit", function(event){
+   event.preventDefault();
+
+   const email = document.getElementById("email").value;
+   const password = document.getElementById("password").value;
+    
+   console.log("Email:", email);
+   console.log("Password:", password);
+
+   modal.classList.remove("active");
+});
+
+  loginBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent link navigation if it's an <a>
+    modal.classList.add("active"); 
+  });
+
+  closeBtn.addEventListener("click", function() {
+    modal.classList.remove("active");
+  });
+
+ 
+  window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
+</script>
+
+</main>
 </body>
 </html>
