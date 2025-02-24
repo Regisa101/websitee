@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Real Estate Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #344E41, #507642);
+            padding: 30px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        section h2 {
+            color: #e91e63; /* Pink for headings */
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .section-content div {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+        }
+
+        .section-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-choose-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .why-choose-us li {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            position: relative;
+            color: #2e7d32; /* Green for checkmarks */
+        }
+
+        .why-choose-us li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-size: 1.2em;
+        }
+
+        .quotes {
+            background: linear-gradient(to right, #ffecd2, #fcb69f); /* Orange gradient */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .quotes blockquote {
+            font-style: italic;
+            margin: 30px auto;
+            width: 75%;
+            color: #555;
+        }
+
+        .pricing {
+            background: linear-gradient(to left, #c2e59c, #64b3f4); /* Blue-green gradient */
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .pricing-range {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-range div {
+            border: 2px solid #ddd;
+            padding: 30px;
+            border-radius: 15px;
+            width: 30%;
+            margin-bottom: 20px;
+            background: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-range h3 {
+            color: #3f51b5; /* Deep purple for pricing titles */
+            margin-bottom: 15px;
+        }
+
+        .pricing-range p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        footer {
+            background: #222;
+            color: #eee;
+            text-align: center;
+            padding: 25px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Real Estate</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="Aboutus.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Properties</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Buy/Rent</a></li>
+                <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+                <li><button class="btnlogin-popup"id="loginBtn">Login</button></li>            
+            </ul>
+        </nav>
+    </header>
+    
+    <header>
+        <div class="container">
+            <h1>Welcome to Your Dream Home in Nepal</h1>
+            <p>Your Trusted Real Estate Partner</p>
+        </div>
+    </header>
+
+    <section id="who-we-are">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="section-content">
+                <div>
+                    <p>At Real Estate Company, we understand that finding the perfect home in Nepal is more than just a transaction; it's about finding your place in the heart of the Himalayas. Our team is dedicated to providing personalized service, expert market knowledge, and unwavering support to help you achieve your real estate goals.</p>
+                    <p>We are committed to building lasting relationships with our clients, ensuring that every step of your journey is smooth and successful. Whether you're looking for a cozy apartment in Kathmandu or a luxurious villa in Bhaktapur, we're here to guide you home.</p>
+                </div>
+                <div>
+                    <img src="images.jpg" alt="Nepalese House" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li>Deep Local Market Expertise in Nepal</li>
+                <li>Personalized Guidance and Support</li>
+                <li>Strong Negotiation Skills for Best Deals</li>
+                <li>Extensive Network of Trusted Partners</li>
+                <li>Commitment to Client Satisfaction</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="quotes">
+        <div class="container">
+            <h2>Our Clients' Experiences</h2>
+            <blockquote>"Finding a home in Kathmandu was daunting, but your company made it seamless. Their expertise and dedication were exceptional." - Lumana Manandhar</blockquote>
+            <blockquote>"I just bought my property in kathmandu according to my budget, thanks to their professional service. Highly recommended!" - Safalta Joshi</blockquote>
+            <blockquote>"This company proved that house is build with love. Thank you for the guidance!" - Subina Maharjan</blockquote>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Explore Our Diverse Property Ranges</h2>
+            <div class="pricing-range">
+                <div>
+                    <h3>Luxury Villas & Estates</h3>
+                    <p>Rs. 3 Crore - Rs. 10 Crore+</p>
+                    <p>(Approx. $240,000 - $800,000+)</p>
+                </div>
+                <div>
+                    <h3>Mid-Range Homes & Apartments</h3>
+                    <p>Rs. 1 Crore - Rs. 3 Crore</p>
+                    <p>(Approx. $80,000 - $240,000)</p>
+                </div>
+                <div>
+                    <h3>Minimal & Budget-Friendly Homes</h3>
+                    <p>Rs. 2 Lakhs - Rs. 1 Crore</p>
+                    <p>(Approx. $24,000 - $80,000)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Real Estate Company. Your Dream Home Awaits in Nepal.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Placeholder image replacement (replace with actual image paths)
+        document.querySelectorAll('img[src="images.jpg"]').forEach(img => {
+            img.src = "C:\Users\DELL\Desktop\images.jpg"; // Replace with your image URL
+        });
+    </script>
+</body>
+</html>
