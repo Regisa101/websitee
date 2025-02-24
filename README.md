@@ -68,6 +68,7 @@
             </div>
         </div>
     </section>
+    
 
 <div id="loginModal" class="modal">
   <div class="modal-content">
@@ -91,6 +92,64 @@
     </form>
   </div>
 </div>
+
+<section class="properties" id="properties">
+    <div class="title-box">
+        <h2 class="section-title">LATEST LISTING</h2>
+    </div>
+    <p class="section-description">
+        Discover stunning homes that match your dreams and budget. From cozy apartments to luxurious villas, 
+        find the perfect space to call home.
+    </p>
+
+    <div class="property-grid">
+        <!-- First three listings (visible by default) -->
+        <div class="property-card">
+            <img src="home2.webp" alt="Modern House">
+            <h3>RS 2,50,00,000</h3>
+            <p>Kathmandu</p>
+            <a href="#" class="view-property-btn">View Property</a>
+        </div>
+        <div class="property-card">
+            <img src="home3.jpg" alt="Luxury Villa">
+            <h3>RS 12,00,00,000</h3>
+            <p>Pokhara</p>
+            <a href="#" class="view-property-btn">View Property</a>
+        </div>
+        <div class="property-card">
+            <img src="home1.jpg" alt="City Apartment">
+            <h3>RS 3,50,00,000</h3>
+            <p>Bhaktapur</p>
+            <a href="#" class="view-property-btn">View Property</a>
+        </div>
+
+        <!-- Hidden properties (shown after clicking "View All") -->
+        <div class="property-card hidden">
+            <img src="home4.jpg" alt="Suburban Home">
+            <h3>RS 4,50,00,000</h3>
+            <p>Lalitpur</p>
+            <a href="#" class="view-property-btn">View Property</a>
+        </div>
+        <div class="property-card hidden">
+            <img src="home5.webp" alt="Cozy Cottage">
+            <h3>RS 1,80,00,000</h3>
+            <p>Biratnagar</p>
+            <a href="#" class="view-property-btn">View Property</a>
+        </div>
+        <div class="property-card hidden">
+            <img src="home6.jpg" alt="Elegant Mansion">
+            <h3>RS 30,00,00,000</h3>
+            <p>Kathmandu</p>
+            <a href="#" class="view-property-btn">View Property</a>
+        </div>
+    </div>
+
+    <!-- View All button -->
+    <div class="view-all-container">
+        <button id="viewAllBtn">View All</button>
+    </div>
+</section>
+
 <script>
   const modal = document.getElementById("loginModal");
   const loginBtn = document.getElementById("loginBtn");
@@ -136,6 +195,13 @@
     }
   });
 </script>
+<script>
+    document.getElementById("viewAllBtn").addEventListener("click", function() {
+        const hiddenCards = document.querySelectorAll(".property-card.hidden");
+        hiddenCards.forEach(card => card.classList.remove("hidden"));
+        this.style.display = "none"; // Hide the button after clicking
+    });
+    </script>
 
 </main>
 </body>
