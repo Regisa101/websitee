@@ -15,10 +15,10 @@
         </a>
         <ul class="nav-menu">
             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="Aboutus.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Properties</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Buy/Rent</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
             <li><button class="btnlogin-popup"id="loginBtn">Login</button></li>            
         </ul>
     </nav>
@@ -100,7 +100,7 @@
   const showPasswordCheckbox = document.getElementById("showPassword");
   
   showPasswordCheckbox.addEventListener("change", function(){
-  if(this.check){
+  if(this.checked){
    passwordInput.type="text";
   }
   else{
