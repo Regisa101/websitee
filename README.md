@@ -149,6 +149,29 @@
         <button id="viewAllBtn">View All</button>
     </div>
 </section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p><strong>Phone:</strong> +977-1234567890</p>
+            <p><strong>Email:</strong> info@realestate.com</p>
+            <p><strong>Location:</strong> Kathmandu, Nepal</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Real Estate. All rights reserved.</p>
+    </div>
+</footer>
 
 <script>
   const modal = document.getElementById("loginModal");
