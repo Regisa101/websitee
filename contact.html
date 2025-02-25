@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,7 @@
             <div class="contact-container">
             <div class="contact-form">
                 <h3>Get in Touch</h3>
-                <form action="submit_contact.php" method="POST">
+                <form id="contactForm" action="submit_contact.php" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <input type="text" name="subject" placeholder="Subject" required>
@@ -74,7 +75,7 @@
         <label for="showPassword">Show Password</label>
       </div>
       <button type="submit" class="btn-login">Login</button>
-      <p class="extra-linl">Don’t have an account? <a href="#">Register</a></p>
+      <p class="extra-link">Don�t have an account? <a href="#">Register</a></p>
     </form>
   </div>
 </div>
@@ -124,6 +125,14 @@
       modal.classList.remove("active");
     }
   });
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+          event.preventDefault();
+              alert('Your message has been sent!');
+          });
+
+
 </script>
 </header>
 </body>
